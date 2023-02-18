@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16</title>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="Inputmask-5.x/Inputmask-5.x/dist/inputmask.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css "
+    />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js "></script>
+    <link
+      rel="stylesheet"
+      href="Choices-master/Choices-master/public/assets/styles/choices.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <div class="training flex">
+        <div class="training__place checkbox flex">
+          <h2>Категории:</h2>
+          <label class="check">
+            <input type="checkbox" class="check__box" checked />
+            Динозавры
+            <span class="check__sub"></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" class="check__box" />
+            Медведи
+            <span class="check__sub"></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" class="check__box" />
+            Косули
+            <span class="check__sub"></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" class="check__box" />
+            Лисы
+            <span class="check__sub"></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" class="check__box" />
+            Волки
+            <span class="check__sub"></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" class="check__box" />
+            Олени и лоси
+            <span class="check__sub"></span>
+          </label>
+        </div>
+        <div class="training__place select-area">
+          <select class="select" name="select">
+            <option value="" selected>Материал</option>
+            <option value="1">Древесина</option>
+            <option value="2">Металл</option>
+            <option value="3">Камень</option>
+            <option value="4">Пластик</option>
+            <option value="5">Композитный</option>
+            <option value="6">Гипс</option>
+          </select>
+        </div>
+        <script
+          src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+          type="text/javascript"
+        ></script>
+        <div class="training__place">
+          <div id="map" style="width: 460px; height: 460px"></div>
+        </div>
+        <div class="training__place scroll-area" data-simplebar>
+          Сложно сказать, почему многие известные личности представлены в
+          исключительно положительном свете. Лишь активно развивающиеся страны
+          третьего мира будут объективно рассмотрены соответствующими
+          инстанциями. Мы вынуждены отталкиваться от того, что
+          высокотехнологичная концепция общественного уклада представляет собой
+          интересный эксперимент проверки глубокомысленных рассуждений. Имеется
+          спорная точка зрения, гласящая примерно следующее: непосредственные
+          участники технического прогресса освещают чрезвычайно интересные
+          особенности картины в целом, однако конкретные выводы, разумеется,
+          обнародованы. Значимость этих проблем настолько очевидна, что
+          социально-экономическое развитие, а также свежий взгляд на привычные
+          вещи - безусловно открывает новые горизонты для первоочередных
+          требований.
+        </div>
+        <div class="training__place valid">
+          <form action="" id="form" class="valid-form flex" autocomplete="off">
+            <div class="form__input-box">
+              <input
+                id="name"
+                class="form__input form-control"
+                name="name"
+                type="text"
+                placeholder="Имя*"
+                autocomplete="off"
+                data-validate-field="name"
+              />
+            </div>
+            <div class="form__input-box">
+              <input
+                id="tel"
+                class="form__input form-control"
+                name="phone"
+                type="tel"
+                placeholder="Телефон*"
+                autocomplete="off"
+                data-validate-field="tel"
+                data-validate-rules="phone"
+              />
+            </div>
+            <div class="form__input-box">
+              <input
+                id="email"
+                class="form__input form-control"
+                type="email"
+                name="email"
+                placeholder="E-mail*"
+                autocomplete="off"
+                data-validate-field="mail"
+              />
+            </div>
+
+            <button class="btn btn-primary" id="submit-btn" type="submit">
+              Заказать
+            </button>
+          </form>
+        </div>
+        <div class="training__place tap-area tooltip">
+          <span class="content">
+            Следует отметить, что социально-экономическое развитие способствует
+            повышению качества переосмысления внешнеэкономических политик.
+          </span>
+          <svg
+            class="marker"
+            tabindex="3"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+            />
+          </svg>
+
+          <div class="popup">Глава 2, страница 176</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Choices-master/Choices-master/public/assets/scripts/choices.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
